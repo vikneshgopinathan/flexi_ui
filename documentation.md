@@ -1,6 +1,6 @@
-# FlexiUI Documentation
+# JSON UI Builder Documentation
 
-Complete documentation for FlexiUI - A server-driven UI library for Flutter.
+Complete documentation for JSON UI Builder - A server-driven UI library for Flutter.
 
 ## Table of Contents
 

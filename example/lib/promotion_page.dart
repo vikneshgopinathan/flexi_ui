@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flexi_ui/flexi_ui.dart';
+import 'package:json_ui_builder/json_ui_builder.dart';
 
 class PromotionPage extends StatelessWidget {
   final String promotionId;

@@ -1,6 +1,8 @@
-# FlexiUI
+# JSON UI Builder
 
-A server-driven UI library for Flutter that allows you to create dynamic UIs from JSON configurations. FlexiUI supports fetching configurations from local assets, HTTP endpoints, and local files.
+A server-driven UI library for Flutter that creates dynamic UIs from JSON configurations. JSON UI Builder supports fetching configurations from local assets, HTTP endpoints, and local files.
+
+#ui #widget #server-driven-ui #dynamic-widgets
 
 ## Features
 
@@ -32,7 +34,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  flexi_ui: ^0.0.1
+  json_ui_builder: ^0.1.1
 ```
 
 ## Platform Support
@@ -75,7 +77,7 @@ The example app includes:
 ### 1. Basic Usage
 
 ```dart
-import 'package:flexi_ui/flexi_ui.dart';
+import 'package:json_ui_builder/json_ui_builder.dart';
 
 // Load from asset
 const dataSource = DataSourceConfig(

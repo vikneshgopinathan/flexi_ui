@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flexi_ui/flexi_ui.dart';
+import 'package:json_ui_builder/json_ui_builder.dart';
 
 void main() {
   group('WidgetConfig', () {
@@ -159,7 +159,8 @@ void main() {
   });
 
   group('FlexiUI Widget', () {
-    testWidgets('should show loading widget initially', (WidgetTester tester) async {
+    testWidgets('should show loading widget initially',
+        (WidgetTester tester) async {
       const dataSource = DataSourceConfig(
         type: DataSourceType.asset,
         assetPath: 'non_existent.json',
@@ -174,7 +175,8 @@ void main() {
       expect(find.text('Loading UI configuration...'), findsOneWidget);
     });
 
-    testWidgets('should show error widget on failure', (WidgetTester tester) async {
+    testWidgets('should show error widget on failure',
+        (WidgetTester tester) async {
       const dataSource = DataSourceConfig(
         type: DataSourceType.asset,
         assetPath: 'non_existent.json',
@@ -195,27 +197,36 @@ void main() {
 
   group('Color parsing', () {
     test('should parse named colors', () {
-      expect(SimpleWidgetFactory.createWidget(WidgetConfig(
-        type: 'Container',
-        params: {'color': 'red'},
-      )), isA<Container>());
+      expect(
+          SimpleWidgetFactory.createWidget(WidgetConfig(
+            type: 'Container',
+            params: {'color': 'red'},
+          )),
+          isA<Container>());
 
-      expect(SimpleWidgetFactory.createWidget(WidgetConfig(
-        type: 'Container',
-        params: {'color': 'blue'},
-      )), isA<Container>());
+      expect(
+          SimpleWidgetFactory.createWidget(WidgetConfig(
+            type: 'Container',
+            params: {'color': 'blue'},
+          )),
+          isA<Container>());
     });
 
     test('should parse color values', () {
-      expect(SimpleWidgetFactory.createWidget(WidgetConfig(
-        type: 'Container',
-        params: {'color': {'value': 0xFF0000FF}},
-      )), isA<Container>());
+      expect(
+          SimpleWidgetFactory.createWidget(WidgetConfig(
+            type: 'Container',
+            params: {
+              'color': {'value': 0xFF0000FF}
+            },
+          )),
+          isA<Container>());
     });
   });
 
   group('TextStyle parsing', () {
-    testWidgets('should parse TextStyle parameters', (WidgetTester tester) async {
+    testWidgets('should parse TextStyle parameters',
+        (WidgetTester tester) async {
       final config = WidgetConfig(
         type: 'Text',
         params: {
@@ -229,7 +240,8 @@ void main() {
         },
       );
 
-      await tester.pumpWidget(MaterialApp(home: SimpleWidgetFactory.createWidget(config)));
+      await tester.pumpWidget(
+          MaterialApp(home: SimpleWidgetFactory.createWidget(config)));
       expect(find.text('Styled Text'), findsOneWidget);
     });
   });

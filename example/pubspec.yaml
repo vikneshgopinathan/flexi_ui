@@ -9,7 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flexi_ui:
+  json_ui_builder:
     path: ../
 
 dev_dependencies:
