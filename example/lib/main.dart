@@ -74,7 +74,7 @@ class ExamplePage extends StatelessWidget {
                 ),
                 const SizedBox(height: 16),
                 const Text(
-                  'Service-driven UI library for Flutter',
+                  'Server-driven UI library for Flutter',
                   style: TextStyle(fontSize: 18, color: Colors.white70),
                   textAlign: TextAlign.center,
                 ),

@@ -1,5 +1,5 @@
 name: flexi_ui
-description: "A service-driven UI library for Flutter that creates dynamic UIs from JSON configurations with support for HTTP, asset, and local data sources."
+description: "A server-driven UI library for Flutter that creates dynamic UIs from JSON configurations with support for HTTP, asset, and local data sources."
 version: 0.0.1
 homepage: https://github.com/vikneshgopinathan/flexi_ui
 repository: https://github.com/vikneshgopinathan/flexi_ui

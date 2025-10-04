@@ -1,10 +1,10 @@
 # FlexiUI
 
-A service-driven UI library for Flutter that allows you to create dynamic UIs from JSON configurations. FlexiUI supports fetching configurations from local assets, HTTP endpoints, and local files.
+A server-driven UI library for Flutter that allows you to create dynamic UIs from JSON configurations. FlexiUI supports fetching configurations from local assets, HTTP endpoints, and local files.
 
 ## Features
 
-- 🚀 **Service-driven UI**: Create Flutter UIs from JSON configurations
+- 🚀 **Server-driven UI**: Create Flutter UIs from JSON configurations
 - 📱 **Multiple Data Sources**: Support for local assets, HTTP endpoints, and local files
 - 🎨 **Rich Widget Support**: Built-in support for common Flutter widgets
 - 🔧 **Extensible**: Easy to extend with custom widgets
