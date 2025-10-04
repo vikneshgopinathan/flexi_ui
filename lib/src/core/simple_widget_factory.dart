@@ -458,7 +458,6 @@ class SimpleWidgetFactory {
     return null;
   }
 
-
   static IconData? _parseIconData(dynamic iconValue) {
     if (iconValue is String) {
       // Simple icon mapping
