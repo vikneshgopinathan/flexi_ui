@@ -458,15 +458,6 @@ class SimpleWidgetFactory {
     return null;
   }
 
-  static Border? _parseBorder(dynamic borderValue) {
-    if (borderValue is Map<String, dynamic>) {
-      return Border.all(
-        color: _parseColor(borderValue['color']) ?? Colors.black,
-        width: borderValue['width']?.toDouble() ?? 1.0,
-      );
-    }
-    return null;
-  }
 
   static IconData? _parseIconData(dynamic iconValue) {
     if (iconValue is String) {
