@@ -28,13 +28,17 @@ A server-driven UI library for Flutter that creates dynamic UIs from JSON config
 
 📚 **[Complete Documentation](documentation.md)** - Comprehensive widget reference with examples
 
+📖 **Documentation URL**: `https://github.com/vikneshgopinathan/flexi_ui/blob/main/documentation.md`
+
+🔗 **GitHub Repository**: `https://github.com/vikneshgopinathan/flexi_ui`
+
 ## Installation
 
 Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  json_ui_builder: ^0.1.1
+  json_ui_builder: ^0.1.2
 ```
 
 ## Platform Support

@@ -1,3 +1,16 @@
+## 0.1.2
+
+### Changed
+- Renamed package from `flexi_ui` to `json_ui_builder` to avoid naming conflict
+- Updated main library file from `flexi_ui.dart` to `json_ui_builder.dart`
+- Updated all import statements across example files
+- Added GitHub repository and documentation URLs to README and documentation
+
+### Fixed
+- Resolved naming conflict with existing `flexi_ui` package on pub.dev
+- Fixed import errors in all example files
+- Updated package references in pubspec.yaml files
+
 ## 0.1.1
 
 ### Added

@@ -1,6 +1,6 @@
 name: json_ui_builder
 description: "A server-driven UI library for Flutter that creates dynamic UIs from JSON configurations with support for HTTP, asset, and local data sources."
-version: 0.1.1
+version: 0.1.2
 homepage: https://github.com/vikneshgopinathan/flexi_ui
 repository: https://github.com/vikneshgopinathan/flexi_ui
 issue_tracker: https://github.com/vikneshgopinathan/flexi_ui/issues
