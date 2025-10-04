@@ -33,5 +33,5 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 
 
-# Publish configuration
-publish_to: 'https://pub.dev'
+# Publish configuration - remove this line to publish to pub.dev
+# publish_to: 'none'
