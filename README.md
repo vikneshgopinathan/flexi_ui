@@ -5,7 +5,8 @@ A server-driven UI library for Flutter that allows you to create dynamic UIs fro
 ## Features
 
 - 🚀 **Server-driven UI**: Create Flutter UIs from JSON configurations
-- 📱 **Multiple Data Sources**: Support for local assets, HTTP endpoints, and local files
+- 📱 **Cross-Platform**: Works on Android, iOS, Web, Windows, macOS, and Linux
+- 🌐 **Multiple Data Sources**: Support for local assets, HTTP endpoints, and local files
 - 🎨 **Rich Widget Support**: Built-in support for common Flutter widgets
 - 🔧 **Extensible**: Easy to extend with custom widgets
 - 🧪 **Well Tested**: Comprehensive test coverage
@@ -34,7 +35,42 @@ dependencies:
   flexi_ui: ^0.0.1
 ```
 
+## Platform Support
+
+FlexiUI works on all Flutter-supported platforms:
+
+- 📱 **Mobile**: Android, iOS
+- 🌐 **Web**: Chrome, Firefox, Safari, Edge  
+- 🖥️ **Desktop**: Windows, macOS, Linux
+
 ## Quick Start
+
+### Running the Example
+
+The example app demonstrates FlexiUI across all platforms:
+
+```bash
+# Clone the repository
+git clone https://github.com/vikneshgopinathan/flexi_ui.git
+cd flexi_ui/example
+
+# Run on different platforms
+flutter run -d chrome          # Web (Chrome)
+flutter run -d macos           # macOS Desktop
+flutter run -d windows         # Windows Desktop
+flutter run -d linux           # Linux Desktop
+flutter run -d android         # Android Mobile
+flutter run -d ios             # iOS Mobile
+```
+
+### Example App Features
+
+The example app includes:
+
+- 🛍️ **E-commerce Demo**: Complete e-commerce app with homepage, promotions, and product details
+- 📱 **Simple Example**: Basic FlexiUI usage with asset data source
+- 📚 **Documentation Links**: Direct access to comprehensive documentation
+- 🌐 **Cross-Platform**: Works seamlessly on all supported platforms
 
 ### 1. Basic Usage
 
