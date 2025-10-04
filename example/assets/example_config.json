@@ -1,0 +1,104 @@
+{
+  "rootWidget": {
+    "type": "Scaffold",
+  "params": {
+    "backgroundColor": "blue"
+  },
+  "child": {
+    "type": "Center",
+    "child": {
+      "type": "Column",
+      "params": {
+        "mainAxisAlignment": "center",
+        "crossAxisAlignment": "center"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "params": {
+            "text": "Welcome to FlexiUI!",
+            "style": {
+              "fontSize": 28,
+              "color": "white",
+              "fontWeight": "w700"
+            }
+          }
+        },
+        {
+          "type": "SizedBox",
+          "params": {
+            "height": 20
+          }
+        },
+        {
+          "type": "Text",
+          "params": {
+            "text": "This UI was created from JSON configuration",
+            "style": {
+              "fontSize": 16,
+              "color": "white",
+              "fontWeight": "w400"
+            }
+          }
+        },
+        {
+          "type": "SizedBox",
+          "params": {
+            "height": 30
+          }
+        },
+        {
+          "type": "Container",
+          "params": {
+            "padding": {
+              "left": 20,
+              "right": 20,
+              "top": 10,
+              "bottom": 10
+            },
+            "decoration": {
+              "color": "white",
+              "borderRadius": 8
+            }
+          },
+          "child": {
+            "type": "Text",
+            "params": {
+              "text": "Click the button below!",
+              "style": {
+                "fontSize": 18,
+                "color": "blue",
+                "fontWeight": "w600"
+              }
+            }
+          }
+        },
+        {
+          "type": "SizedBox",
+          "params": {
+            "height": 20
+          }
+        },
+        {
+          "type": "ElevatedButton",
+          "params": {
+            "style": {
+              "backgroundColor": "white",
+              "foregroundColor": "blue"
+            }
+          },
+          "child": {
+            "type": "Text",
+            "params": {
+              "text": "Get Started",
+              "style": {
+                "fontWeight": "w600"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+  }
+}

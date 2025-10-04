@@ -1,0 +1,629 @@
+{
+  "rootWidget": {
+    "type": "Scaffold",
+    "params": {
+      "backgroundColor": "white",
+      "appBar": {
+        "type": "AppBar",
+        "params": {
+          "title": {
+            "type": "Text",
+            "params": {
+              "text": "Summer Sale 2024",
+              "style": {
+                "fontSize": 20,
+                "fontWeight": "w600",
+                "color": "white"
+              }
+            }
+          },
+          "backgroundColor": "blue",
+          "elevation": 4
+        }
+      }
+    },
+    "child": {
+      "type": "Column",
+      "children": [
+        {
+          "type": "Container",
+          "params": {
+            "height": 250,
+            "margin": {
+              "all": 16
+            },
+            "decoration": {
+              "borderRadius": {
+                "all": 16
+              },
+              "gradient": {
+                "colors": ["blue", "purple"],
+                "begin": "topLeft",
+                "end": "bottomRight"
+              }
+            }
+          },
+          "child": {
+            "type": "Center",
+            "child": {
+              "type": "Column",
+              "params": {
+                "mainAxisAlignment": "center"
+              },
+              "children": [
+                {
+                  "type": "Text",
+                  "params": {
+                    "text": "🔥 SUMMER SALE 2024 🔥",
+                    "style": {
+                      "fontSize": 32,
+                      "fontWeight": "w800",
+                      "color": "white"
+                    }
+                  }
+                },
+                {
+                  "type": "SizedBox",
+                  "params": {
+                    "height": 16
+                  }
+                },
+                {
+                  "type": "Text",
+                  "params": {
+                    "text": "Up to 70% OFF",
+                    "style": {
+                      "fontSize": 24,
+                      "fontWeight": "w600",
+                      "color": "white"
+                    }
+                  }
+                },
+                {
+                  "type": "Text",
+                  "params": {
+                    "text": "Limited Time Offer",
+                    "style": {
+                      "fontSize": 16,
+                      "fontWeight": "w400",
+                      "color": "white"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "type": "Padding",
+          "params": {
+            "padding": {
+              "horizontal": 16
+            }
+          },
+          "child": {
+            "type": "Text",
+            "params": {
+              "text": "Featured Deals",
+              "style": {
+                "fontSize": 22,
+                "fontWeight": "w700"
+              }
+            }
+          }
+        },
+        {
+          "type": "SizedBox",
+          "params": {
+            "height": 16
+          }
+        },
+        {
+          "type": "Expanded",
+          "child": {
+            "type": "ListView",
+            "params": {
+              "padding": {
+                "horizontal": 16
+              }
+            },
+            "children": [
+              {
+                "type": "GestureDetector",
+                "params": {
+                  "onTap": "navigate_to_product",
+                  "productId": "laptop_deal_001"
+                },
+                "child": {
+                  "type": "Container",
+                  "params": {
+                    "height": 120,
+                    "margin": {
+                      "bottom": 16
+                    },
+                    "decoration": {
+                      "color": "white",
+                      "borderRadius": {
+                        "all": 12
+                      },
+                      "boxShadow": [
+                        {
+                          "color": "grey",
+                          "blurRadius": 6,
+                          "offset": {
+                            "dx": 0,
+                            "dy": 3
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "child": {
+                    "type": "Row",
+                    "children": [
+                      {
+                        "type": "Container",
+                        "params": {
+                          "width": 100,
+                          "height": 100,
+                          "margin": {
+                            "all": 10
+                          },
+                          "decoration": {
+                            "color": "grey",
+                            "borderRadius": {
+                              "all": 8
+                            }
+                          }
+                        },
+                        "child": {
+                          "type": "Center",
+                          "child": {
+                            "type": "Text",
+                            "params": {
+                              "text": "Laptop",
+                              "style": {
+                                "color": "white",
+                                "fontWeight": "w500"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "type": "Expanded",
+                        "child": {
+                          "type": "Padding",
+                          "params": {
+                            "padding": {
+                              "all": 16
+                            }
+                          },
+                          "child": {
+                            "type": "Column",
+                            "params": {
+                              "crossAxisAlignment": "start",
+                              "mainAxisAlignment": "center"
+                            },
+                            "children": [
+                              {
+                                "type": "Text",
+                                "params": {
+                                  "text": "MacBook Pro 16\"",
+                                  "style": {
+                                    "fontSize": 18,
+                                    "fontWeight": "w600"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "SizedBox",
+                                "params": {
+                                  "height": 8
+                                }
+                              },
+                              {
+                                "type": "Row",
+                                "children": [
+                                  {
+                                    "type": "Text",
+                                    "params": {
+                                      "text": "\\$1,999",
+                                      "style": {
+                                        "fontSize": 16,
+                                        "fontWeight": "w500",
+                                        "color": "grey"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "type": "SizedBox",
+                                    "params": {
+                                      "width": 8
+                                    }
+                                  },
+                                  {
+                                    "type": "Text",
+                                    "params": {
+                                      "text": "\\$1,399",
+                                      "style": {
+                                        "fontSize": 18,
+                                        "fontWeight": "w700",
+                                        "color": "red"
+                                      }
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "Container",
+                                "params": {
+                                  "margin": {
+                                    "top": 8
+                                  },
+                                  "padding": {
+                                    "horizontal": 8,
+                                    "vertical": 4
+                                  },
+                                  "decoration": {
+                                    "color": "red",
+                                    "borderRadius": {
+                                      "all": 4
+                                    }
+                                  }
+                                },
+                                "child": {
+                                  "type": "Text",
+                                  "params": {
+                                    "text": "30% OFF",
+                                    "style": {
+                                      "color": "white",
+                                      "fontSize": 12,
+                                      "fontWeight": "w600"
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "GestureDetector",
+                "params": {
+                  "onTap": "navigate_to_product",
+                  "productId": "phone_deal_001"
+                },
+                "child": {
+                  "type": "Container",
+                  "params": {
+                    "height": 120,
+                    "margin": {
+                      "bottom": 16
+                    },
+                    "decoration": {
+                      "color": "white",
+                      "borderRadius": {
+                        "all": 12
+                      },
+                      "boxShadow": [
+                        {
+                          "color": "grey",
+                          "blurRadius": 6,
+                          "offset": {
+                            "dx": 0,
+                            "dy": 3
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "child": {
+                    "type": "Row",
+                    "children": [
+                      {
+                        "type": "Container",
+                        "params": {
+                          "width": 100,
+                          "height": 100,
+                          "margin": {
+                            "all": 10
+                          },
+                          "decoration": {
+                            "color": "grey",
+                            "borderRadius": {
+                              "all": 8
+                            }
+                          }
+                        },
+                        "child": {
+                          "type": "Center",
+                          "child": {
+                            "type": "Text",
+                            "params": {
+                              "text": "Phone",
+                              "style": {
+                                "color": "white",
+                                "fontWeight": "w500"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "type": "Expanded",
+                        "child": {
+                          "type": "Padding",
+                          "params": {
+                            "padding": {
+                              "all": 16
+                            }
+                          },
+                          "child": {
+                            "type": "Column",
+                            "params": {
+                              "crossAxisAlignment": "start",
+                              "mainAxisAlignment": "center"
+                            },
+                            "children": [
+                              {
+                                "type": "Text",
+                                "params": {
+                                  "text": "iPhone 15 Pro Max",
+                                  "style": {
+                                    "fontSize": 18,
+                                    "fontWeight": "w600"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "SizedBox",
+                                "params": {
+                                  "height": 8
+                                }
+                              },
+                              {
+                                "type": "Row",
+                                "children": [
+                                  {
+                                    "type": "Text",
+                                    "params": {
+                                      "text": "\\$1,199",
+                                      "style": {
+                                        "fontSize": 16,
+                                        "fontWeight": "w500",
+                                        "color": "grey"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "type": "SizedBox",
+                                    "params": {
+                                      "width": 8
+                                    }
+                                  },
+                                  {
+                                    "type": "Text",
+                                    "params": {
+                                      "text": "\\$839",
+                                      "style": {
+                                        "fontSize": 18,
+                                        "fontWeight": "w700",
+                                        "color": "red"
+                                      }
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "Container",
+                                "params": {
+                                  "margin": {
+                                    "top": 8
+                                  },
+                                  "padding": {
+                                    "horizontal": 8,
+                                    "vertical": 4
+                                  },
+                                  "decoration": {
+                                    "color": "red",
+                                    "borderRadius": {
+                                      "all": 4
+                                    }
+                                  }
+                                },
+                                "child": {
+                                  "type": "Text",
+                                  "params": {
+                                    "text": "30% OFF",
+                                    "style": {
+                                      "color": "white",
+                                      "fontSize": 12,
+                                      "fontWeight": "w600"
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "GestureDetector",
+                "params": {
+                  "onTap": "navigate_to_product",
+                  "productId": "headphones_deal_001"
+                },
+                "child": {
+                  "type": "Container",
+                  "params": {
+                    "height": 120,
+                    "margin": {
+                      "bottom": 16
+                    },
+                    "decoration": {
+                      "color": "white",
+                      "borderRadius": {
+                        "all": 12
+                      },
+                      "boxShadow": [
+                        {
+                          "color": "grey",
+                          "blurRadius": 6,
+                          "offset": {
+                            "dx": 0,
+                            "dy": 3
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "child": {
+                    "type": "Row",
+                    "children": [
+                      {
+                        "type": "Container",
+                        "params": {
+                          "width": 100,
+                          "height": 100,
+                          "margin": {
+                            "all": 10
+                          },
+                          "decoration": {
+                            "color": "grey",
+                            "borderRadius": {
+                              "all": 8
+                            }
+                          }
+                        },
+                        "child": {
+                          "type": "Center",
+                          "child": {
+                            "type": "Text",
+                            "params": {
+                              "text": "Headphones",
+                              "style": {
+                                "color": "white",
+                                "fontWeight": "w500"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "type": "Expanded",
+                        "child": {
+                          "type": "Padding",
+                          "params": {
+                            "padding": {
+                              "all": 16
+                            }
+                          },
+                          "child": {
+                            "type": "Column",
+                            "params": {
+                              "crossAxisAlignment": "start",
+                              "mainAxisAlignment": "center"
+                            },
+                            "children": [
+                              {
+                                "type": "Text",
+                                "params": {
+                                  "text": "AirPods Pro 2nd Gen",
+                                  "style": {
+                                    "fontSize": 18,
+                                    "fontWeight": "w600"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "SizedBox",
+                                "params": {
+                                  "height": 8
+                                }
+                              },
+                              {
+                                "type": "Row",
+                                "children": [
+                                  {
+                                    "type": "Text",
+                                    "params": {
+                                      "text": "\\$249",
+                                      "style": {
+                                        "fontSize": 16,
+                                        "fontWeight": "w500",
+                                        "color": "grey"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "type": "SizedBox",
+                                    "params": {
+                                      "width": 8
+                                    }
+                                  },
+                                  {
+                                    "type": "Text",
+                                    "params": {
+                                      "text": "\\$174",
+                                      "style": {
+                                        "fontSize": 18,
+                                        "fontWeight": "w700",
+                                        "color": "red"
+                                      }
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "Container",
+                                "params": {
+                                  "margin": {
+                                    "top": 8
+                                  },
+                                  "padding": {
+                                    "horizontal": 8,
+                                    "vertical": 4
+                                  },
+                                  "decoration": {
+                                    "color": "red",
+                                    "borderRadius": {
+                                      "all": 4
+                                    }
+                                  }
+                                },
+                                "child": {
+                                  "type": "Text",
+                                  "params": {
+                                    "text": "30% OFF",
+                                    "style": {
+                                      "color": "white",
+                                      "fontSize": 12,
+                                      "fontWeight": "w600"
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

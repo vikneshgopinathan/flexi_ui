@@ -1,0 +1,37 @@
+name: flexi_ui
+description: "A service-driven UI library for Flutter that creates dynamic UIs from JSON configurations with support for HTTP, asset, and local data sources."
+version: 0.0.1
+homepage: https://github.com/vikneshgopinathan/flexi_ui
+repository: https://github.com/vikneshgopinathan/flexi_ui
+issue_tracker: https://github.com/vikneshgopinathan/flexi_ui/issues
+documentation: https://github.com/vikneshgopinathan/flexi_ui#readme
+topics:
+  - flutter
+  - server-driven-ui
+  - dynamic-ui
+  - json
+  - widgets
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.1.0
+  json_annotation: ^4.8.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.7
+  json_serializable: ^6.7.1
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+
+# Publish configuration
+publish_to: 'https://pub.dev'

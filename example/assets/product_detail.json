@@ -1,0 +1,355 @@
+{
+  "rootWidget": {
+    "type": "Scaffold",
+    "params": {
+      "backgroundColor": "white",
+      "appBar": {
+        "type": "AppBar",
+        "params": {
+          "title": {
+            "type": "Text",
+            "params": {
+              "text": "Product Details",
+              "style": {
+                "fontSize": 20,
+                "fontWeight": "w600",
+                "color": "white"
+              }
+            }
+          },
+          "backgroundColor": "blue",
+          "elevation": 4
+        }
+      }
+    },
+    "child": {
+      "type": "Column",
+      "children": [
+        {
+          "type": "Container",
+          "params": {
+            "height": 300,
+            "margin": {
+              "all": 16
+            },
+            "decoration": {
+              "borderRadius": {
+                "all": 16
+              },
+              "color": "grey"
+            }
+          },
+          "child": {
+            "type": "Center",
+            "child": {
+              "type": "Text",
+              "params": {
+                "text": "Product Image",
+                "style": {
+                  "fontSize": 24,
+                  "fontWeight": "w500",
+                  "color": "white"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "Padding",
+          "params": {
+            "padding": {
+              "horizontal": 16
+            }
+          },
+          "child": {
+            "type": "Column",
+            "params": {
+              "crossAxisAlignment": "start"
+            },
+            "children": [
+              {
+                "type": "Text",
+                "params": {
+                  "text": "MacBook Pro 16-inch",
+                  "style": {
+                    "fontSize": 28,
+                    "fontWeight": "w700"
+                  }
+                }
+              },
+              {
+                "type": "SizedBox",
+                "params": {
+                  "height": 8
+                }
+              },
+              {
+                "type": "Text",
+                "params": {
+                  "text": "Apple M3 Pro Chip",
+                  "style": {
+                    "fontSize": 18,
+                    "fontWeight": "w500",
+                    "color": "grey"
+                  }
+                }
+              },
+              {
+                "type": "SizedBox",
+                "params": {
+                  "height": 16
+                }
+              },
+              {
+                "type": "Row",
+                "children": [
+                  {
+                    "type": "Text",
+                    "params": {
+                      "text": "\\$1,999",
+                      "style": {
+                        "fontSize": 32,
+                        "fontWeight": "w800",
+                        "color": "blue"
+                      }
+                    }
+                  },
+                  {
+                    "type": "SizedBox",
+                    "params": {
+                      "width": 16
+                    }
+                  },
+                  {
+                    "type": "Container",
+                    "params": {
+                      "padding": {
+                        "horizontal": 12,
+                        "vertical": 6
+                      },
+                      "decoration": {
+                        "color": "green",
+                        "borderRadius": {
+                          "all": 8
+                        }
+                      }
+                    },
+                    "child": {
+                      "type": "Text",
+                      "params": {
+                        "text": "In Stock",
+                        "style": {
+                          "color": "white",
+                          "fontSize": 14,
+                          "fontWeight": "w600"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "SizedBox",
+                "params": {
+                  "height": 24
+                }
+              },
+              {
+                "type": "Text",
+                "params": {
+                  "text": "Description",
+                  "style": {
+                    "fontSize": 20,
+                    "fontWeight": "w600"
+                  }
+                }
+              },
+              {
+                "type": "SizedBox",
+                "params": {
+                  "height": 8
+                }
+              },
+              {
+                "type": "Text",
+                "params": {
+                  "text": "The MacBook Pro with M3 Pro chip delivers exceptional performance for professional workflows. Featuring a stunning 16-inch Liquid Retina XDR display, advanced camera and audio systems, and all-day battery life.",
+                  "style": {
+                    "fontSize": 16,
+                    "fontWeight": "w400",
+                    "color": "grey"
+                  }
+                }
+              },
+              {
+                "type": "SizedBox",
+                "params": {
+                  "height": 24
+                }
+              },
+              {
+                "type": "Text",
+                "params": {
+                  "text": "Specifications",
+                  "style": {
+                    "fontSize": 20,
+                    "fontWeight": "w600"
+                  }
+                }
+              },
+              {
+                "type": "SizedBox",
+                "params": {
+                  "height": 8
+                }
+              },
+              {
+                "type": "Column",
+                "params": {
+                  "crossAxisAlignment": "start"
+                },
+                "children": [
+                  {
+                    "type": "Text",
+                    "params": {
+                      "text": "• 16-inch Liquid Retina XDR display",
+                      "style": {
+                        "fontSize": 16,
+                        "fontWeight": "w400"
+                      }
+                    }
+                  },
+                  {
+                    "type": "Text",
+                    "params": {
+                      "text": "• Apple M3 Pro chip with 12-core CPU",
+                      "style": {
+                        "fontSize": 16,
+                        "fontWeight": "w400"
+                      }
+                    }
+                  },
+                  {
+                    "type": "Text",
+                    "params": {
+                      "text": "• 18-core GPU with 36GB unified memory",
+                      "style": {
+                        "fontSize": 16,
+                        "fontWeight": "w400"
+                      }
+                    }
+                  },
+                  {
+                    "type": "Text",
+                    "params": {
+                      "text": "• Up to 22 hours battery life",
+                      "style": {
+                        "fontSize": 16,
+                        "fontWeight": "w400"
+                      }
+                    }
+                  },
+                  {
+                    "type": "Text",
+                    "params": {
+                      "text": "• 1080p FaceTime HD camera",
+                      "style": {
+                        "fontSize": 16,
+                        "fontWeight": "w400"
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "Spacer"
+        },
+        {
+          "type": "Container",
+          "params": {
+            "padding": {
+              "all": 16
+            },
+            "decoration": {
+              "color": "white",
+              "boxShadow": [
+                {
+                  "color": "grey",
+                  "blurRadius": 8,
+                  "offset": {
+                    "dx": 0,
+                    "dy": -2
+                  }
+                }
+              ]
+            }
+          },
+          "child": {
+            "type": "Row",
+            "children": [
+              {
+                "type": "Expanded",
+                "child": {
+                  "type": "ElevatedButton",
+                  "params": {
+                    "style": {
+                      "backgroundColor": "blue",
+                      "padding": {
+                        "vertical": 16
+                      }
+                    }
+                  },
+                  "child": {
+                    "type": "Text",
+                    "params": {
+                      "text": "Add to Cart",
+                      "style": {
+                        "fontSize": 18,
+                        "fontWeight": "w600",
+                        "color": "white"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "SizedBox",
+                "params": {
+                  "width": 16
+                }
+              },
+              {
+                "type": "Expanded",
+                "child": {
+                  "type": "ElevatedButton",
+                  "params": {
+                    "style": {
+                      "backgroundColor": "green",
+                      "padding": {
+                        "vertical": 16
+                      }
+                    }
+                  },
+                  "child": {
+                    "type": "Text",
+                    "params": {
+                      "text": "Buy Now",
+                      "style": {
+                        "fontSize": 18,
+                        "fontWeight": "w600",
+                        "color": "white"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

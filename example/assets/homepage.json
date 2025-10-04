@@ -1,0 +1,826 @@
+{
+  "rootWidget": {
+    "type": "Scaffold",
+    "params": {
+      "backgroundColor": "white",
+      "appBar": {
+        "type": "AppBar",
+        "params": {
+          "title": {
+            "type": "Text",
+            "params": {
+              "text": "E-Shop",
+              "style": {
+                "fontSize": 24,
+                "fontWeight": "w700",
+                "color": "white"
+              }
+            }
+          },
+          "backgroundColor": "blue",
+          "elevation": 4
+        }
+      }
+    },
+    "child": {
+      "type": "Column",
+      "children": [
+        {
+          "type": "Container",
+          "params": {
+            "height": 200,
+            "margin": {
+              "all": 16
+            }
+          },
+          "child": {
+            "type": "PageView",
+            "params": {
+              "scrollDirection": "horizontal"
+            },
+            "children": [
+              {
+                "type": "GestureDetector",
+                "params": {
+                  "onTap": "navigate_to_promotion",
+                  "promotionId": "headphones_sale"
+                },
+                "child": {
+                  "type": "Container",
+                  "params": {
+                    "width": "double.infinity",
+                    "height": "double.infinity",
+                    "decoration": {
+                      "borderRadius": {
+                        "all": 12
+                      },
+                      "image": {
+                        "url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=200&fit=crop"
+                      }
+                    }
+                  },
+                  "child": {
+                    "type": "Center",
+                    "child": {
+                      "type": "Column",
+                      "params": {
+                        "mainAxisAlignment": "center"
+                      },
+                      "children": [
+                        {
+                          "type": "Text",
+                          "params": {
+                            "text": "Premium Headphones",
+                            "style": {
+                              "fontSize": 24,
+                              "fontWeight": "w700",
+                              "color": "white"
+                            }
+                          }
+                        },
+                        {
+                          "type": "Text",
+                          "params": {
+                            "text": "Up to 50% Off",
+                            "style": {
+                              "fontSize": 16,
+                              "fontWeight": "w500",
+                              "color": "white"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              {
+                "type": "GestureDetector",
+                "params": {
+                  "onTap": "navigate_to_promotion",
+                  "promotionId": "smartwatch_sale"
+                },
+                "child": {
+                  "type": "Container",
+                  "params": {
+                    "width": "double.infinity",
+                    "height": "double.infinity",
+                    "decoration": {
+                      "borderRadius": {
+                        "all": 12
+                      },
+                      "image": {
+                        "url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=200&fit=crop"
+                      }
+                    }
+                  },
+                  "child": {
+                    "type": "Center",
+                    "child": {
+                      "type": "Column",
+                      "params": {
+                        "mainAxisAlignment": "center"
+                      },
+                      "children": [
+                        {
+                          "type": "Text",
+                          "params": {
+                            "text": "Smart Watches",
+                            "style": {
+                              "fontSize": 24,
+                              "fontWeight": "w700",
+                              "color": "white"
+                            }
+                          }
+                        },
+                        {
+                          "type": "Text",
+                          "params": {
+                            "text": "Latest Collection",
+                            "style": {
+                              "fontSize": 16,
+                              "fontWeight": "w500",
+                              "color": "white"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              {
+                "type": "GestureDetector",
+                "params": {
+                  "onTap": "navigate_to_promotion",
+                  "promotionId": "shoes_sale"
+                },
+                "child": {
+                  "type": "Container",
+                  "params": {
+                    "width": "double.infinity",
+                    "height": "double.infinity",
+                    "decoration": {
+                      "borderRadius": {
+                        "all": 12
+                      },
+                      "image": {
+                        "url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=200&fit=crop"
+                      }
+                    }
+                  },
+                  "child": {
+                    "type": "Center",
+                    "child": {
+                      "type": "Column",
+                      "params": {
+                        "mainAxisAlignment": "center"
+                      },
+                      "children": [
+                        {
+                          "type": "Text",
+                          "params": {
+                            "text": "Running Shoes",
+                            "style": {
+                              "fontSize": 24,
+                              "fontWeight": "w700",
+                              "color": "white"
+                            }
+                          }
+                        },
+                        {
+                          "type": "Text",
+                          "params": {
+                            "text": "Free Shipping",
+                            "style": {
+                              "fontSize": 16,
+                              "fontWeight": "w500",
+                              "color": "white"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "Container",
+          "params": {
+            "height": 120,
+            "margin": {
+              "horizontal": 16
+            }
+          },
+          "child": {
+            "type": "Column",
+            "params": {
+              "crossAxisAlignment": "start"
+            },
+            "children": [
+              {
+                "type": "Text",
+                "params": {
+                  "text": "Categories",
+                  "style": {
+                    "fontSize": 20,
+                    "fontWeight": "w600"
+                  }
+                }
+              },
+              {
+                "type": "SizedBox",
+                "params": {
+                  "height": 16
+                }
+              },
+              {
+                "type": "Row",
+                "params": {
+                  "mainAxisAlignment": "spaceEvenly"
+                },
+                "children": [
+                  {
+                    "type": "GestureDetector",
+                    "params": {
+                      "onTap": "navigate_to_category",
+                      "categoryId": "electronics"
+                    },
+                    "child": {
+                      "type": "Container",
+                      "params": {
+                        "width": 80,
+                        "height": 60,
+                        "decoration": {
+                          "color": "grey",
+                          "borderRadius": {
+                            "all": 8
+                          }
+                        }
+                      },
+                      "child": {
+                        "type": "Center",
+                        "child": {
+                          "type": "Text",
+                          "params": {
+                            "text": "Electronics",
+                            "style": {
+                              "fontSize": 12,
+                              "fontWeight": "w500"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "GestureDetector",
+                    "params": {
+                      "onTap": "navigate_to_category",
+                      "categoryId": "clothing"
+                    },
+                    "child": {
+                      "type": "Container",
+                      "params": {
+                        "width": 80,
+                        "height": 60,
+                        "decoration": {
+                          "color": "grey",
+                          "borderRadius": {
+                            "all": 8
+                          }
+                        }
+                      },
+                      "child": {
+                        "type": "Center",
+                        "child": {
+                          "type": "Text",
+                          "params": {
+                            "text": "Clothing",
+                            "style": {
+                              "fontSize": 12,
+                              "fontWeight": "w500"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "GestureDetector",
+                    "params": {
+                      "onTap": "navigate_to_category",
+                      "categoryId": "books"
+                    },
+                    "child": {
+                      "type": "Container",
+                      "params": {
+                        "width": 80,
+                        "height": 60,
+                        "decoration": {
+                          "color": "grey",
+                          "borderRadius": {
+                            "all": 8
+                          }
+                        }
+                      },
+                      "child": {
+                        "type": "Center",
+                        "child": {
+                          "type": "Text",
+                          "params": {
+                            "text": "Books",
+                            "style": {
+                              "fontSize": 12,
+                              "fontWeight": "w500"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "GestureDetector",
+                    "params": {
+                      "onTap": "navigate_to_category",
+                      "categoryId": "home"
+                    },
+                    "child": {
+                      "type": "Container",
+                      "params": {
+                        "width": 80,
+                        "height": 60,
+                        "decoration": {
+                          "color": "grey",
+                          "borderRadius": {
+                            "all": 8
+                          }
+                        }
+                      },
+                      "child": {
+                        "type": "Center",
+                        "child": {
+                          "type": "Text",
+                          "params": {
+                            "text": "Home",
+                            "style": {
+                              "fontSize": 12,
+                              "fontWeight": "w500"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "Expanded",
+          "child": {
+            "type": "Column",
+            "params": {
+              "crossAxisAlignment": "start"
+            },
+            "children": [
+              {
+                "type": "Padding",
+                "params": {
+                  "padding": {
+                    "horizontal": 16
+                  }
+                },
+                "child": {
+                  "type": "Text",
+                  "params": {
+                    "text": "Featured Products",
+                    "style": {
+                      "fontSize": 20,
+                      "fontWeight": "w600"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "SizedBox",
+                "params": {
+                  "height": 16
+                }
+              },
+              {
+                "type": "Expanded",
+                "child": {
+                  "type": "GridView",
+                  "params": {
+                    "crossAxisCount": 2,
+                    "childAspectRatio": 0.7,
+                    "padding": {
+                      "all": 16
+                    },
+                    "crossAxisSpacing": 16,
+                    "mainAxisSpacing": 16
+                  },
+                  "children": [
+                    {
+                      "type": "GestureDetector",
+                      "params": {
+                        "onTap": "navigate_to_product",
+                        "productId": "laptop_001"
+                      },
+                      "child": {
+                        "type": "Container",
+                        "params": {
+                          "decoration": {
+                            "color": "white",
+                            "borderRadius": {
+                              "all": 12
+                            },
+                            "boxShadow": [
+                              {
+                                "color": "grey",
+                                "blurRadius": 4,
+                                "offset": {
+                                  "dx": 0,
+                                  "dy": 2
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "child": {
+                          "type": "Column",
+                          "children": [
+                            {
+                              "type": "Container",
+                              "params": {
+                                "height": 120,
+                                "decoration": {
+                                  "image": {
+                                    "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=200&h=120&fit=crop"
+                                  },
+                                  "borderRadius": {
+                                    "topLeft": 12,
+                                    "topRight": 12
+                                  }
+                                }
+                              },
+                              "child": {
+                                "type": "Center",
+                                "child": {
+                                  "type": "Text",
+                                  "params": {
+                                    "text": "",
+                                    "style": {
+                                      "color": "white"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "Padding",
+                              "params": {
+                                "padding": {
+                                  "all": 8
+                                }
+                              },
+                              "child": {
+                                "type": "Column",
+                                "params": {
+                                  "crossAxisAlignment": "start"
+                                },
+                                "children": [
+                                  {
+                                    "type": "Text",
+                                    "params": {
+                                      "text": "MacBook Pro",
+                                      "style": {
+                                        "fontSize": 14,
+                                        "fontWeight": "w600"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "type": "Text",
+                                    "params": {
+                                      "text": "\\$1,999",
+                                      "style": {
+                                        "fontSize": 16,
+                                        "fontWeight": "w700",
+                                        "color": "blue"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "type": "GestureDetector",
+                      "params": {
+                        "onTap": "navigate_to_product",
+                        "productId": "phone_001"
+                      },
+                      "child": {
+                        "type": "Container",
+                        "params": {
+                          "decoration": {
+                            "color": "white",
+                            "borderRadius": {
+                              "all": 12
+                            },
+                            "boxShadow": [
+                              {
+                                "color": "grey",
+                                "blurRadius": 4,
+                                "offset": {
+                                  "dx": 0,
+                                  "dy": 2
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "child": {
+                          "type": "Column",
+                          "children": [
+                            {
+                              "type": "Container",
+                              "params": {
+                                "height": 120,
+                                "decoration": {
+                                  "image": {
+                                    "url": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=200&h=120&fit=crop"
+                                  },
+                                  "borderRadius": {
+                                    "topLeft": 12,
+                                    "topRight": 12
+                                  }
+                                }
+                              },
+                              "child": {
+                                "type": "Center",
+                                "child": {
+                                  "type": "Text",
+                                  "params": {
+                                    "text": "",
+                                    "style": {
+                                      "color": "white"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "Padding",
+                              "params": {
+                                "padding": {
+                                  "all": 8
+                                }
+                              },
+                              "child": {
+                                "type": "Column",
+                                "params": {
+                                  "crossAxisAlignment": "start"
+                                },
+                                "children": [
+                                  {
+                                    "type": "Text",
+                                    "params": {
+                                      "text": "iPhone 15",
+                                      "style": {
+                                        "fontSize": 14,
+                                        "fontWeight": "w600"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "type": "Text",
+                                    "params": {
+                                      "text": "\\$999",
+                                      "style": {
+                                        "fontSize": 16,
+                                        "fontWeight": "w700",
+                                        "color": "blue"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "type": "GestureDetector",
+                      "params": {
+                        "onTap": "navigate_to_product",
+                        "productId": "headphones_001"
+                      },
+                      "child": {
+                        "type": "Container",
+                        "params": {
+                          "decoration": {
+                            "color": "white",
+                            "borderRadius": {
+                              "all": 12
+                            },
+                            "boxShadow": [
+                              {
+                                "color": "grey",
+                                "blurRadius": 4,
+                                "offset": {
+                                  "dx": 0,
+                                  "dy": 2
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "child": {
+                          "type": "Column",
+                          "children": [
+                            {
+                              "type": "Container",
+                              "params": {
+                                "height": 120,
+                                "decoration": {
+                                  "image": {
+                                    "url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=200&h=120&fit=crop"
+                                  },
+                                  "borderRadius": {
+                                    "topLeft": 12,
+                                    "topRight": 12
+                                  }
+                                }
+                              },
+                              "child": {
+                                "type": "Center",
+                                "child": {
+                                  "type": "Text",
+                                  "params": {
+                                    "text": "",
+                                    "style": {
+                                      "color": "white"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "Padding",
+                              "params": {
+                                "padding": {
+                                  "all": 8
+                                }
+                              },
+                              "child": {
+                                "type": "Column",
+                                "params": {
+                                  "crossAxisAlignment": "start"
+                                },
+                                "children": [
+                                  {
+                                    "type": "Text",
+                                    "params": {
+                                      "text": "AirPods Pro",
+                                      "style": {
+                                        "fontSize": 14,
+                                        "fontWeight": "w600"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "type": "Text",
+                                    "params": {
+                                      "text": "\\$249",
+                                      "style": {
+                                        "fontSize": 16,
+                                        "fontWeight": "w700",
+                                        "color": "blue"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "type": "GestureDetector",
+                      "params": {
+                        "onTap": "navigate_to_product",
+                        "productId": "watch_001"
+                      },
+                      "child": {
+                        "type": "Container",
+                        "params": {
+                          "decoration": {
+                            "color": "white",
+                            "borderRadius": {
+                              "all": 12
+                            },
+                            "boxShadow": [
+                              {
+                                "color": "grey",
+                                "blurRadius": 4,
+                                "offset": {
+                                  "dx": 0,
+                                  "dy": 2
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "child": {
+                          "type": "Column",
+                          "children": [
+                            {
+                              "type": "Container",
+                              "params": {
+                                "height": 120,
+                                "decoration": {
+                                  "image": {
+                                    "url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=200&h=120&fit=crop"
+                                  },
+                                  "borderRadius": {
+                                    "topLeft": 12,
+                                    "topRight": 12
+                                  }
+                                }
+                              },
+                              "child": {
+                                "type": "Center",
+                                "child": {
+                                  "type": "Text",
+                                  "params": {
+                                    "text": "",
+                                    "style": {
+                                      "color": "white"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "Padding",
+                              "params": {
+                                "padding": {
+                                  "all": 8
+                                }
+                              },
+                              "child": {
+                                "type": "Column",
+                                "params": {
+                                  "crossAxisAlignment": "start"
+                                },
+                                "children": [
+                                  {
+                                    "type": "Text",
+                                    "params": {
+                                      "text": "Apple Watch",
+                                      "style": {
+                                        "fontSize": 14,
+                                        "fontWeight": "w600"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "type": "Text",
+                                    "params": {
+                                      "text": "\\$399",
+                                      "style": {
+                                        "fontSize": 16,
+                                        "fontWeight": "w700",
+                                        "color": "blue"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

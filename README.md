@@ -10,16 +10,20 @@ A service-driven UI library for Flutter that allows you to create dynamic UIs fr
 - 🔧 **Extensible**: Easy to extend with custom widgets
 - 🧪 **Well Tested**: Comprehensive test coverage
 - 📚 **Type Safe**: Full type safety with JSON serialization
-
 ## Supported Widgets
 
 - **Layout**: Scaffold, Column, Row, Container, Padding, Center, Expanded, Flexible, SizedBox
 - **Text**: Text with full TextStyle support
 - **Buttons**: ElevatedButton, TextButton, IconButton
 - **Navigation**: AppBar
-- **Lists**: ListView, GridView
+- **Lists**: ListView, GridView, PageView
 - **Cards**: Card
+- **Input**: GestureDetector
+- **Display**: Icon, Divider
+- **Utility**: Spacer
 - **And more...**
+
+📚 **[Complete Documentation](documentation.md)** - Comprehensive widget reference with examples
 
 ## Installation
 

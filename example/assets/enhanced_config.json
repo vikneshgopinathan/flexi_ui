@@ -1,0 +1,218 @@
+{
+  "type": "Scaffold",
+  "params": {
+    "backgroundColor": "blue"
+  },
+  "child": {
+    "type": "Column",
+    "params": {
+      "mainAxisAlignment": "center",
+      "crossAxisAlignment": "center"
+    },
+    "children": [
+      {
+        "type": "Text",
+        "params": {
+          "text": "Enhanced FlexiUI Demo",
+          "style": {
+            "fontSize": 32,
+            "color": "white",
+            "fontWeight": "w800",
+            "letterSpacing": 1.5,
+            "decoration": "underline",
+            "decorationColor": "white",
+            "decorationStyle": "wavy"
+          }
+        }
+      },
+      {
+        "type": "SizedBox",
+        "params": {
+          "height": 30
+        }
+      },
+      {
+        "type": "Container",
+        "params": {
+          "padding": {
+            "left": 24,
+            "right": 24,
+            "top": 16,
+            "bottom": 16
+          },
+          "decoration": {
+            "color": "white",
+            "borderRadius": 20,
+            "boxShadow": [
+              {
+                "color": "black",
+                "offset": {"dx": 0, "dy": 8},
+                "blurRadius": 16,
+                "spreadRadius": 0
+              }
+            ]
+          }
+        },
+        "child": {
+          "type": "Text",
+          "params": {
+            "text": "Automatic Parameter Detection",
+            "style": {
+              "fontSize": 18,
+              "color": "blue",
+              "fontWeight": "w700",
+              "letterSpacing": 0.5
+            }
+          }
+        }
+      },
+      {
+        "type": "SizedBox",
+        "params": {
+          "height": 40
+        }
+      },
+      {
+        "type": "Row",
+        "params": {
+          "mainAxisAlignment": "center",
+          "crossAxisAlignment": "center"
+        },
+        "children": [
+          {
+            "type": "ElevatedButton",
+            "params": {
+              "style": {
+                "backgroundColor": "white",
+                "foregroundColor": "blue",
+                "elevation": 6,
+                "padding": {
+                  "left": 24,
+                  "right": 24,
+                  "top": 12,
+                  "bottom": 12
+                }
+              }
+            },
+            "child": {
+              "type": "Text",
+              "params": {
+                "text": "Primary Action",
+                "style": {
+                  "fontWeight": "w600",
+                  "fontSize": 16
+                }
+              }
+            }
+          },
+          {
+            "type": "SizedBox",
+            "params": {
+              "width": 20
+            }
+          },
+          {
+            "type": "OutlinedButton",
+            "params": {
+              "style": {
+                "foregroundColor": "white",
+                "side": {
+                  "color": "white",
+                  "width": 2
+                }
+              }
+            },
+            "child": {
+              "type": "Text",
+              "params": {
+                "text": "Secondary",
+                "style": {
+                  "fontWeight": "w600",
+                  "fontSize": 16
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "SizedBox",
+        "params": {
+          "height": 30
+        }
+      },
+      {
+        "type": "Container",
+        "params": {
+          "width": 300,
+          "height": 200,
+          "decoration": {
+            "color": "white",
+            "borderRadius": 12,
+            "border": {
+              "color": "blue",
+              "width": 2
+            }
+          },
+          "padding": {
+            "left": 16,
+            "right": 16,
+            "top": 16,
+            "bottom": 16
+          }
+        },
+        "child": {
+          "type": "Column",
+          "params": {
+            "mainAxisAlignment": "center",
+            "crossAxisAlignment": "center"
+          },
+          "children": [
+            {
+              "type": "Icon",
+              "params": {
+                "icon": "star",
+                "size": 48,
+                "color": "blue"
+              }
+            },
+            {
+              "type": "SizedBox",
+              "params": {
+                "height": 16
+              }
+            },
+            {
+              "type": "Text",
+              "params": {
+                "text": "Feature Highlights",
+                "style": {
+                  "fontSize": 20,
+                  "fontWeight": "w700",
+                  "color": "blue"
+                }
+              }
+            },
+            {
+              "type": "SizedBox",
+              "params": {
+                "height": 8
+              }
+            },
+            {
+              "type": "Text",
+              "params": {
+                "text": "• Automatic parameter detection\n• HTTP with retry logic\n• Local asset support\n• Custom widget registration",
+                "style": {
+                  "fontSize": 14,
+                  "color": "grey",
+                  "height": 1.4
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
