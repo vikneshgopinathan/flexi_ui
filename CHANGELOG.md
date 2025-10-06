@@ -1,3 +1,9 @@
+## 0.1.3
+
+### Fixed
+- Fixed Dart formatting issues in generated files (flexi_ui_config.g.dart and widget_config.g.dart)
+- Improved static analysis score by resolving code formatting violations
+
 ## 0.1.2
 
 ### Changed

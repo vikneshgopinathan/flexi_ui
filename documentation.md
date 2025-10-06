@@ -1,5 +1,7 @@
 # JSON UI Builder Documentation
 
+![JSON UI Builder Banner](example/assets/images/banner_1.png)
+
 Complete documentation for JSON UI Builder - A server-driven UI library for Flutter.
 
 🔗 **GitHub Repository**: `https://github.com/vikneshgopinathan/flexi_ui`

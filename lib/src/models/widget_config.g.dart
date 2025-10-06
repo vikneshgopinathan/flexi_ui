@@ -7,17 +7,15 @@ part of 'widget_config.dart';
 // **************************************************************************
 
 WidgetConfig _$WidgetConfigFromJson(Map<String, dynamic> json) => WidgetConfig(
-  type: json['type'] as String,
-  params: json['params'] as Map<String, dynamic>?,
-  child:
-      json['child'] == null
+      type: json['type'] as String,
+      params: json['params'] as Map<String, dynamic>?,
+      child: json['child'] == null
           ? null
           : WidgetConfig.fromJson(json['child'] as Map<String, dynamic>),
-  children:
-      (json['children'] as List<dynamic>?)
+      children: (json['children'] as List<dynamic>?)
           ?.map((e) => WidgetConfig.fromJson(e as Map<String, dynamic>))
           .toList(),
-);
+    );
 
 Map<String, dynamic> _$WidgetConfigToJson(WidgetConfig instance) =>
     <String, dynamic>{
@@ -29,30 +27,33 @@ Map<String, dynamic> _$WidgetConfigToJson(WidgetConfig instance) =>
 
 TextStyleConfig _$TextStyleConfigFromJson(
   Map<String, dynamic> json,
-) => TextStyleConfig(
-  fontSize: (json['fontSize'] as num?)?.toDouble(),
-  fontFamily: json['fontFamily'] as String?,
-  fontWeight: $enumDecodeNullable(_$FlexiFontWeightEnumMap, json['fontWeight']),
-  color: _colorFromJson(json['color']),
-  fontStyle: $enumDecodeNullable(_$FlexiFontStyleEnumMap, json['fontStyle']),
-  letterSpacing: (json['letterSpacing'] as num?)?.toDouble(),
-  wordSpacing: (json['wordSpacing'] as num?)?.toDouble(),
-  textBaseline: $enumDecodeNullable(
-    _$FlexiTextBaselineEnumMap,
-    json['textBaseline'],
-  ),
-  height: (json['height'] as num?)?.toDouble(),
-  decoration: $enumDecodeNullable(
-    _$FlexiTextDecorationEnumMap,
-    json['decoration'],
-  ),
-  decorationColor: _colorFromJson(json['decorationColor']),
-  decorationStyle: $enumDecodeNullable(
-    _$FlexiTextDecorationStyleEnumMap,
-    json['decorationStyle'],
-  ),
-  decorationThickness: (json['decorationThickness'] as num?)?.toDouble(),
-);
+) =>
+    TextStyleConfig(
+      fontSize: (json['fontSize'] as num?)?.toDouble(),
+      fontFamily: json['fontFamily'] as String?,
+      fontWeight:
+          $enumDecodeNullable(_$FlexiFontWeightEnumMap, json['fontWeight']),
+      color: _colorFromJson(json['color']),
+      fontStyle:
+          $enumDecodeNullable(_$FlexiFontStyleEnumMap, json['fontStyle']),
+      letterSpacing: (json['letterSpacing'] as num?)?.toDouble(),
+      wordSpacing: (json['wordSpacing'] as num?)?.toDouble(),
+      textBaseline: $enumDecodeNullable(
+        _$FlexiTextBaselineEnumMap,
+        json['textBaseline'],
+      ),
+      height: (json['height'] as num?)?.toDouble(),
+      decoration: $enumDecodeNullable(
+        _$FlexiTextDecorationEnumMap,
+        json['decoration'],
+      ),
+      decorationColor: _colorFromJson(json['decorationColor']),
+      decorationStyle: $enumDecodeNullable(
+        _$FlexiTextDecorationStyleEnumMap,
+        json['decorationStyle'],
+      ),
+      decorationThickness: (json['decorationThickness'] as num?)?.toDouble(),
+    );
 
 Map<String, dynamic> _$TextStyleConfigToJson(TextStyleConfig instance) =>
     <String, dynamic>{
@@ -110,13 +111,13 @@ const _$FlexiTextDecorationStyleEnumMap = {
 };
 
 ColorConfig _$ColorConfigFromJson(Map<String, dynamic> json) => ColorConfig(
-  value: (json['value'] as num?)?.toInt(),
-  opacity: (json['opacity'] as num?)?.toDouble(),
-  red: (json['red'] as num?)?.toInt(),
-  green: (json['green'] as num?)?.toInt(),
-  blue: (json['blue'] as num?)?.toInt(),
-  colorName: json['colorName'] as String?,
-);
+      value: (json['value'] as num?)?.toInt(),
+      opacity: (json['opacity'] as num?)?.toDouble(),
+      red: (json['red'] as num?)?.toInt(),
+      green: (json['green'] as num?)?.toInt(),
+      blue: (json['blue'] as num?)?.toInt(),
+      colorName: json['colorName'] as String?,
+    );
 
 Map<String, dynamic> _$ColorConfigToJson(ColorConfig instance) =>
     <String, dynamic>{

@@ -1,5 +1,7 @@
 # JSON UI Builder
 
+![JSON UI Builder Banner](example/assets/images/banner_1.png)
+
 A server-driven UI library for Flutter that creates dynamic UIs from JSON configurations. JSON UI Builder supports fetching configurations from local assets, HTTP endpoints, and local files.
 
 #ui #widget #server-driven-ui #dynamic-widgets

@@ -30,10 +30,9 @@ DataSourceConfig _$DataSourceConfigFromJson(Map<String, dynamic> json) =>
       headers: (json['headers'] as Map<String, dynamic>?)?.map(
         (k, e) => MapEntry(k, e as String),
       ),
-      timeout:
-          json['timeout'] == null
-              ? null
-              : Duration(microseconds: (json['timeout'] as num).toInt()),
+      timeout: json['timeout'] == null
+          ? null
+          : Duration(microseconds: (json['timeout'] as num).toInt()),
     );
 
 Map<String, dynamic> _$DataSourceConfigToJson(DataSourceConfig instance) =>
